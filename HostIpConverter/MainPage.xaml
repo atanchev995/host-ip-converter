@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Enter hostname:" VerticalAlignment="Top" Margin="30,30,0,0"/>
+        <TextBox x:Name="hostnameInput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="30,55,0,0" Width="256"/>
+        <Button x:Name="getipButton" Content="Get IP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="291,55,0,0"/>
+        <ListView x:Name="ipOutput" HorizontalAlignment="Left" Height="178" Margin="30,92,0,0" VerticalAlignment="Top" Width="321"/>
 
     </Grid>
 </Page>
