@@ -22,9 +22,17 @@ namespace HostIpConverter
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        ConvertAddress convertHostname = new ConvertAddress();
+
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private async void getipButton_Click(object sender, RoutedEventArgs e)
+        {
+            string hostnameToConvert = hostnameInput.Text;
+            await convertHostname.HostToIp(hostnameToConvert, ipOutput);
         }
     }
 }
