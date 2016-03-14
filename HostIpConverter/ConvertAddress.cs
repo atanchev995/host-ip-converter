@@ -17,7 +17,7 @@ namespace HostIpConverter
             foreach (EndpointPair ep in eps)
             {
                 string result = ep.RemoteHostName.ToString();
-                output.Items.Clear();
+                //output.Items.Clear();
                 output.Items.Add(result);
             }
         }
